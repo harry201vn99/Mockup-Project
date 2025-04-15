@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="description" content="Assignment 1A" />
+<meta name="keywords" content="HTML, CSS, JavaScript" />
+<meta name="author" content="Dong Xuan Nguyen" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assignment 1A</title>
+<!-- link -->
+<link href="styles/styles.css" rel="stylesheet"/>
+<link href="styles/responsive.css" rel="stylesheet" media="screen and (max-width: 1024px)"/> <!-- i have to seperate responsive layout into one single css file because when i put it in one same file, it breaks my website --> 
+<script src="scripts/confirm.js"></script>
+</head>
+<body>
+
+<!-- navigation bar -->
+<nav class="nav">
+<nav class="nav-centered">
+<a href="index.html"><img src="images/samsung.jpg" style="width:100%;" alt="Samsung Logo"/></a>
+</nav>
+<a href="index.html" title="Return to Homepage">HOMEPAGE</a>
+<a href="product.html" title="Go to Product Page">PRODUCT</a>
+<nav class="nav-right">
+<a href="enquire.html" title="Go to Enquire Page">ENQUIRE</a>
+<a href="about.html" title="Go to About Page">ABOUT</a>
+<a href="enhancements.html" title="Go to Enhancements Page">ENHANCEMENTS</a>
+</nav>
+</nav>
+
+<header>
+	<h1>Payment Confirmation</h1>
+</header>
+
+<form id="payform" method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+	<fieldset>
+		<legend>Customer Information</legend>
+		<p>First name: <span id="pay_cusfname"></span></p>
+		<p>Last name: <span id="pay_cuslname"></span></p>
+		<p>Email address: <span id="pay_email"></span></p>
+		<p>Address: <span  id="pay_street"></span></p>
+		<p>Suburb/town: <span  id="pay_sub"></span></p>
+		<p>State: <span  id="pay_state"></span></p>
+		<p>Postcode: <span  id="pay_postcode"></span></p>
+		<p>Preferred Contact: <span id="pay_contact"></span></p>
+		<p>Phone number: <span  id="pay_phonenum"></span></p>
+		<p>Product series: <span id="pay_series"></span></p>
+		<p>Product color: <span id="pay_color"></span></p>
+		<p>Product storage: <span id="pay_storage"></span></p>
+		<p>Quanity: <span id="pay_quanity"></span></p>
+		<p>Total Cost: <span  id="pay_cost"></span> AUD</p>
+		<input type="hidden" name="cusfname" id="cusfname" />
+		<input type="hidden" name="cuslname" id="cuslname" />
+		<input type="hidden" name="email" id="email" />
+		<input type="hidden" name="street" id="street" />
+		<input type="hidden" name="sub" id="sub" />
+		<input type="hidden" name="state" id="state" />
+		<input type="hidden" name="postcode" id="postcode" />
+		<input type="hidden" name="phonenum" id="phonenum" />
+		<input type="hidden" name="buys9" id="buys9" />
+		<input type="hidden" name="s9clr" id="s9clr" />
+		<input type="hidden" name="s9strg" id="s9strg" />
+		<input type="hidden" name="quanity" id="quanity" />
+		<input type="hidden" name="cost" id="cost" />
+		
+		<p>
+		<label for="paymentcard">Select payment</label> 
+		<select name="paymentcard" id="paymentcard">		
+			<option value="visa">Visa Card</option>
+			<option value="master">Master Card</option>
+			<option value="us">American Express</option>
+		</select>
+		</p>
+		
+		<p><label for="card">Card Number:</label>
+			<input type="text" id="card" name="card"/>
+		</p>
+		<p><label for="expiryday">Expiry Date</label>
+			<input type="text" id="expiryday" name="expiryday" required="required" placeholder="mm/yy" pattern="\d{1,2}/\d{2}" title="Format mm/yy" maxlength="10" size="10" />
+		</p>
+		<p><label for="cvv">CVV:</label>
+			<input type="text" id="cvv" name="cvv" size="10"/>
+		</p>
+		<p><label for="cardholder">Cardholder Name:</label>
+			<input type="text" id="cardholder" name="cardholder" required="required" size="17"  pattern="^[A-Za-z -]+$" title="Alphabet, Spaces and Hyphens only"/>
+		</p>
+		<input type="submit" value="Confirm Pay" />
+		<button type="button" id="cancelButton">Cancel</button>
+    </fieldset>
+</form>
+	
+<br>
+<br>
+<br>
+<br>
+
+<!-- footer -->
+<footer>
+<p><a href="mailto:101992153@student.swin.edu.au">Email: Dong Xuan Nguyen (Harry)</a></p>
+</footer>
+
+</body>
+</html>

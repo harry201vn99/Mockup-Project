@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="description" content="Assignment 1A" />
+<meta name="keywords" content="HTML, CSS, JavaScript" />
+<meta name="author" content="Dong Xuan Nguyen" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assignment 1A</title>
+<!-- link -->
+<link href="styles/styles.css" rel="stylesheet"/>
+<link href="styles/responsive.css" rel="stylesheet" media="screen and (max-width: 1024px)"/> <!-- i have to seperate responsive layout into one single css file because when i put it in one same file, it breaks my website --> 
+</head>
+<body>
+
+<!-- navigation bar -->
+<nav class="nav">
+<nav class="nav-centered">
+<a href="index.html"><img src="images/samsung.jpg" style="width:100%;" alt="Samsung Logo"/></a>
+</nav>
+<a href="index.html" title="Return to Homepage">HOMEPAGE</a>
+<a href="product.html" title="Go to Product Page">PRODUCT</a>
+<nav class="nav-right">
+<a href="enquire.html" title="Go to Enquire Page">ENQUIRE</a>
+<a href="about.html" title="Go to About Page">ABOUT</a>
+<a href="enhancements.html" title="Go to Enhancements Page" class="active">ENHANCEMENTS</a>
+</nav>
+</nav>
+
+<!-- header -->
+<header>
+<h1>Enhancements</h1>
+</header>
+
+<!-- enhancements -->
+<dl>
+<dt><ul><li class="enhancetopic">Align Images Side By Side</li></ul></dt>
+<dd>
+<ol>
+<li>Link:<a href="https://www.w3schools.com/howto/howto_css_images_side_by_side.asp">https://www.w3schools.com/howto/howto_css_images_side_by_side.asp</a></li>
+<li>This make the images side by side and centered in the web page, this technique was used in homepage (index page) and product page. This technique was applied by creating 2 divs: "row" and "column" div row covered all images and align them in centered position, while div column covered single images and make images run from left to right with changeable distance between each images.</li>
+</ol>
+</dd>
+</dl>
+
+<dl>
+<dt><ul><li class="enhancetopic">Centered Top Navigation</li></ul></dt>
+<dd>
+<ol>
+<li>Link:<a href="https://www.w3schools.com/howto/howto_css_topnav_centered.asp">https://www.w3schools.com/howto/howto_css_topnav_centered.asp</a></li>
+<li>This make the top navigation has centered text or image. This technique was applied in every single pages. This was created by creating span nav to cover all navigation links, span nav-centered to cover center image and span nav-right to cover right aligned link, while left aligned link was a default postion, so there was no need to create it. Along with some effect like current active web page and hover effect.</li>
+</ol>
+</dd>
+</dl>
+
+<dl>
+<dt><ul><li class="enhancetopic">Image Hover Overlay - Fade In A Box</li></ul></dt>
+<dd>
+<ol>
+<li>Link:<a href="https://www.w3schools.com/howto/howto_css_image_overlay.asp">https://www.w3schools.com/howto/howto_css_image_overlay.asp</a></li>
+<li>This create a hover effect which appears text box and blurr effect on background image when mouse moved over. This technique was applied only in homepage (index page). This was created by creating 3 divs: container (align the overall effect on image), middle (change the text box from size to position) and text (change text size, family font, position).</li>
+</ol>
+</dd>
+</dl>
+
+<dl>
+<dt><ul><li class="enhancetopic">Tables With Irregular Headers</li></ul></dt>
+<dd>
+<ol>
+<li>Link:<a href="https://www.w3.org/WAI/tutorials/tables/irregular/">https://www.w3.org/WAI/tutorials/tables/irregular/</a></li>
+<li>This make a table has headers in both row and column. This technique was applied in product page and about page. This was created by using scope row and scope col to make headers.</li>
+</ol>
+</dd>
+</dl>
+
+<dl>
+<dt><ul><li class="enhancetopic">Form On Image</li></ul></dt>
+<dd>
+<ol>
+<li>Link:<a href="https://www.w3schools.com/howto/howto_css_form_on_image.asp">https://www.w3schools.com/howto/howto_css_form_on_image.asp</a></li>
+<li>This create a form of login with image as background. This technique was used in enquire page. This technique was created by using 3 divs: bg-img (apply background image to the form also change size, position of it), formlogin (change background color, text size and position) and formlog.</li>
+</ol>
+</dd>
+</dl>
+
+<dl>
+<dt><ul><li class="enhancetopic">Rounded Images</li></ul></dt>
+<dd>
+<ol>
+<li>Link:<a href="https://www.w3schools.com/howto/howto_css_rounded_images.asp">https://www.w3schools.com/howto/howto_css_rounded_images.asp</a></li>
+<li>This make image rounded. This was applied in about page. By using border-radius in CSS applied at targeted image which set at 50%.</li>
+</ol>
+</dd>
+</dl>
+
+<br><br><br><br><br><br><br>
+
+<!-- footer -->
+<footer>
+<p><a href="mailto:101992153@student.swin.edu.au">Email: Dong Xuan Nguyen (Harry)</a></p>
+</footer>
+  
+</body>
+</html>

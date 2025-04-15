@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="description" content="Assignment 1A" />
+<meta name="keywords" content="HTML, CSS, JavaScript" />
+<meta name="author" content="Dong Xuan Nguyen" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assignment 1A</title>
+<!-- link -->
+<link href="styles/styles.css" rel="stylesheet"/>
+<link href="styles/responsive.css" rel="stylesheet" media="screen and (max-width: 1024px)"/> <!-- i have to seperate responsive layout into one single css file because when i put it in one same file, it breaks my website --> 
+<script src="scripts/part1B.js"></script>
+</head>
+<body>
+
+<!-- navigation bar -->
+<nav class="nav">
+<nav class="nav-centered">
+<a href="index.html"><img src="images/samsung.jpg" style="width:100%;" alt="Samsung Logo"/></a>
+</nav>
+<a href="index.html" title="Return to Homepage">HOMEPAGE</a>
+<a href="product.html" title="Go to Product Page">PRODUCT</a>
+<nav class="nav-right">
+<a href="enquire.html" title="Go to Enquire Page" class="active">ENQUIRE</a>
+<a href="about.html" title="Go to About Page">ABOUT</a>
+<a href="enhancements.html" title="Go to Enhancements Page">ENHANCEMENTS</a>
+</nav>
+</nav>
+
+<!-- header -->
+<header>
+<h1>Product Enquiry</h1>
+</header>
+
+<!-- form on image -->
+<div class="bg-img">
+<form action="https://mercury.swin.edu.au/it000000/formtest.php" class="container1">
+<h1 id="formlog">Login</h1>
+<label for="email"><b>Email</b></label>
+<input class="formlogin" type="text" placeholder="Enter Email" name="email" required="required">
+<label id="psw"><b>Password</b></label><input class="formlogin" type="password" placeholder="Enter Password" name="psw" required="required">
+<button type="submit" class="btn">Login</button>
+</form>
+</div>
+
+<br>
+
+<!-- form-name -->
+<form id="buyform" action="payment.html" >
+
+<fieldset id="buyer">
+<legend><strong>Customer details</strong></legend>
+<p>
+<span class="form">
+<label for="cusfname">First name</label>
+<input type="text" name="cusfname" id="cusfname" maxlength="25" required="required" pattern="^[A-Za-z -]+$" title="Alphabet, Spaces and Hyphens only"/>
+</span>
+</p>
+
+<p>
+<label for="cuslname">Last name</label>
+<input type="text" name= "cuslname" id="cuslname" maxlength="25" required="required" pattern="^[A-Za-z -]+$" title="Alphabet, Spaces and Hyphens only"/>
+</p>
+
+<p>
+<label for="email">Email address</label>
+<input type="email" name= "email" id="email" size="25" required="required" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$"/>
+</p>
+
+<p>
+<label for="phonenum">Phone number</label>
+<input type="text" name="phonenum" id="phonenum" maxlength="10" size="10" placeholder="04" required="required"/>
+</p>
+</fieldset>
+
+<!-- form-address -->
+<fieldset id="address">
+<legend><strong>Customer address</strong></legend>
+<p>
+<span class="form">
+<label for="street">Street address</label>
+<input type="text" name="street" id="street" maxlength="40" size="40" required="required"/>
+</span>
+</p>
+
+<p>
+<label for="sub">Suburb/town</label>
+<input type="text" name="sub" id="sub" maxlength="20" size="20" required="required"/>
+</p>
+
+<p>
+<span class="form">
+<label for="state">State</label> 
+<select name="state" id="state">
+<option value="">Please Select</option>			
+<option value="vic">VIC</option>
+<option value="nsw">NSW</option>
+<option value="qld">QLD</option>
+<option value="nt">NT</option>
+<option value="wa">WA</option>
+<option value="sa">SA</option>
+<option value="tas">TAS</option>
+<option value="act">ACT</option>
+</select>
+</span>
+</p>
+
+<p>
+<label for="postcode">Postcode</label>
+<input type="text" name="postcode" id="postcode" maxlength="4" size="5"/>
+</p>
+</fieldset>
+
+<!-- form-contact -->
+<fieldset id="contact">
+<legend><strong>Customer contact</strong></legend>
+<p>
+<span class="form">
+<label for="email">Email</label>
+<input type="radio" id="email" name="customer contact" value="email" required="required"/>
+</span>
+</p>
+
+<p>
+<span class="form">
+<label for="post">Post</label>
+<input type="radio" id="post" name="customer contact" value="post"/>
+</span>
+</p>
+
+<p>
+<label for="phone">Phone</label>
+<input type="radio" id="phone" name="customer contact" value="phone"/>
+</p>
+</fieldset>
+
+<!-- Purchase Product -->
+<fieldset id="buyproduct">
+<legend><strong>Purchase product</strong></legend>
+<label for="buys9">Choose Device Series</label> 
+<select name="buys9" id="buys9">
+<option value="">Please Select</option>			
+<option value="Samsung Galaxy S9" id="1s9" name="1s9">Samsung Galaxy S9</option>
+<option value="Samsung Galaxy Note9"id="2s9" name="2s9">Samsung Galaxy Note9</option>
+</select>
+
+<label for="s9clr">Select Colour</label> 
+<select name="s9clr" id="s9clr">
+<option value="">Please Select</option>			
+<option value="Midnight Black">Midnight Black</option>
+<option value="Coral Blue">Coral Blue</option>
+<option value="Lilac Purple">Lilac Purple</option>
+<option value="Sunrise Gold">Sunrise Gold</option>
+</select>
+
+<label for="s9strg">Select Storage</label> 
+<select name="s9strg" id="s9strg">
+<option value="">Please Select</option>			
+<option value="64GB" id="1s9strg" name="1s9strg">64GB</option>
+<option value="256GB" id="2s9strg" name="2s9strg">256GB</option>
+</select>
+
+<p>
+<label for="quanity">Number of Devices:</label>
+<input type="text" id="quanity" name="quanity" maxlength="3" size="3" />
+</p>
+</fieldset>
+
+<div id="bottom"> </div>
+  <p><input type="submit" value="Pay Now" />
+     <input type="reset" value="Reset" />
+  </p>
+</form>
+
+<br>
+<br>
+<br>
+<br>
+
+<!-- footer -->
+<footer>
+<p><a href="mailto:101992153@student.swin.edu.au">Email: Dong Xuan Nguyen (Harry)</a></p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="description" content="Assignment 1A" />
+<meta name="keywords" content="HTML, CSS, JavaScript" />
+<meta name="author" content="Dong Xuan Nguyen" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assignment 1A</title>
+<!-- link -->
+<link href="styles/styles.css" rel="stylesheet"/>
+<link href="styles/responsive.css" rel="stylesheet" media="screen and (max-width: 1024px)"/> <!-- i have to seperate responsive layout into one single css file because when i put it in one same file, it breaks my website --> 
+</head>
+<body>
+
+<!-- navigation bar -->
+<nav class="nav">
+<nav class="nav-centered">
+<a href="index.html"><img src="images/samsung.jpg" style="width:100%;" alt="Samsung Logo"/></a>
+</nav>
+<a href="index.html" title="Return to Homepage">HOMEPAGE</a>
+<a href="product.html" title="Go to Product Page">PRODUCT</a>
+<nav class="nav-right">
+<a href="enquire.html" title="Go to Enquire Page">ENQUIRE</a>
+<a href="about.html" title="Go to About Page" class="active">ABOUT</a>
+<a href="enhancements.html" title="Go to Enhancements Page">ENHANCEMENTS</a>
+</nav>
+</nav>
+
+<!-- header -->
+<header>
+<h1>About</h1>
+</header>
+
+<!-- section-student details -->
+<section>
+<h2 class="h2about">Student details:</h2>
+
+<!-- name -->
+<dl>
+<dt><ul><li class="underline"><strong>Name:</strong></li></ul></dt>
+<dd>Dong Xuan Nguyen (Harry)</dd>
+</dl>
+
+<!-- id -->
+<dl>
+<dt><ul><li class="underline"><strong>Student ID:</strong></li></ul></dt>
+<dd>101992153</dd>
+</dl>
+
+<!-- courses -->
+<dl>
+<dt><ul><li class="underline"><strong>Courses:</strong></li></ul></dt>
+<dd>
+<ol>
+<li>COS10007 - Developing Technical Software</li>
+<li>COS10020 - Creating Web Applications</li>
+<li>INF20015 - Requirements Analysis and Modelling</li>
+<li>MKT10008 - Marketing Principles</li>
+</ol>
+</dd>
+</dl>
+
+<!-- photo -->
+<dl>
+<dt><ul><li class="underline"><strong>Photo:</strong></li></ul></dt>
+<dd><img id="myphoto" src="images/myphoto.jpg" alt="Studen Photo"/></dd>
+</dl>
+
+<!-- timetable -->
+<dl>
+<dt><ul><li class="underline"><strong>My timetable:</strong></li></ul></dt>
+<dd><p>2018 Pathways Teaching 3</p></dd>
+</dl>
+<table>
+  <tr>
+    <td></td>
+    <th scope="col">Monday</th>
+    <th scope="col">Tuesday</th>
+    <th scope="col">Wednesday</th>
+    <th scope="col">Thursday</th>
+    <th scope="col">Friday</th>
+  </tr>
+  <tr>
+    <th scope="row">8:30AM-10:30AM</th>
+    <td class="web">COS10020-Lab TC327</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td class="market">MKT10008-Lab TD195</td>
+  </tr>
+  <tr>
+    <th scope="row">10:30AM-12:30PM</th>
+    <td>-</td>
+    <td class="web">COS10020-Lecture TD144</td>
+    <td class="model">INF20015-Lab TD195</td>
+    <td>-</td>
+    <td class="soft">COS10007-Lab TA109</td>
+  </tr>
+    <tr>
+    <th scope="row">11:30AM-1:30PM</th>
+    <td class="model">INF20015-Lab TA109</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+    <tr>
+    <th scope="row">12:30PM-2:30PM</th>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td class="web">COS10020-Lab TA110</td>
+    <td>-</td>
+  </tr>
+    <tr>
+    <th scope="row">1:30PM-3:30PM</th>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td class="market">MKT10008-Class TD198</td>
+  </tr>
+    <tr>
+    <th scope="row">2:30PM-3:30PM</th>
+    <td class="market">MKT10008-Lecture EN615</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+    <tr>
+    <th scope="row">2:30PM-4:30PM</th>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td class="soft">COS10007-Lecture TD144</td>
+    <td>-</td>
+  </tr>
+    <tr>
+    <th scope="row">3:30PM-5:30PM</th>
+    <td class="soft">COS10007-Lab TC223</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+    <tr>
+    <th scope="row">4:30PM-6:30PM</th>
+    <td>-</td>
+    <td>-</td>
+    <td class="model">INF20015-Lecture TD144</td>
+    <td>-</td>
+    <td>-</td>
+  </tr>
+</table>
+
+<!-- contact -->
+<dl>
+<dt><ul><li class="underline"><strong>Contact:</strong></li></ul></dt>
+<dd><a href="mailto:101992153@student.swin.edu.au" title="My Email">101992153@student.swin.edu.au</a></dd>
+</dl>
+</section>
+
+<!-- Section - Assignment Requirements -->
+<section>
+<h2 class="h2about">Assignment Requirements:</h2>
+
+<!-- html - index page -->
+<dl>
+<dt><ul><li class="underline"><strong>HTML Requirements Completed - Index Page</strong></li></ul></dt>
+<dd>
+<ol>
+<li>
+<label for="HTML5">Validated HTML5</label>
+<input type="checkbox" id="HTML5" name="HTML5" value="HTML5"/>
+</li>
+
+<li>
+<label for="XML">Validated XML</label>
+<input type="checkbox" id="XML" name="XML" value="XML"/>
+</li>
+
+<li>
+<label for="head">&lt;Head&gt; With all meta tags, title,author</label>
+<input type="checkbox" id="head" name="head" value="head"/>
+</li>
+
+<li>
+<label for="nav">Nav menu</label>
+<input type="checkbox" id="nav" name="nav" value="nav"/>
+</li>
+
+<li>
+<label for="logo">Logo/graphic</label>
+<input type="checkbox" id="logo" name="logo" value="logo"/>
+</li>
+
+<li>
+<label for="footer">&lt;Footer&gt;</label>
+<input type="checkbox" id="footer" name="footer" value="footer"/>
+</li>
+</ol>
+</dd>
+</dl>
+
+<!-- html - product page -->
+<dl>
+<dt><ul><li class="underline"><strong>HTML Requirements Completed - Product Page</strong></li></ul></dt>
+<dd>
+<ol>
+<li>
+<label for="HTML5prd">Validated HTML5</label>
+<input type="checkbox" id="HTML5prd" name="HTML5prd" value="HTML5prd"/>
+</li>
+
+<li>
+<label for="XMLprd">Validated XML</label>
+<input type="checkbox" id="XMLprd" name="XMLprd" value="XMLprd"/>
+</li>
+
+<li>
+<label for="navmenu">Nav menu</label>
+<input type="checkbox" id="navmenu" name="navmenu" value="navmenu"/>
+</li>
+
+<li>
+<label for="lvheading">Appropriate levels of headings</label>
+<input type="checkbox" id="lvheading" name="lvheading" value="lvheading"/>
+</li>
+
+<li>
+<label for="content">Meaningful content</label>
+<input type="checkbox" id="content" name="content" value="content"/>
+</li>
+
+<li>
+<label for="words">&gt;~150 Words</label>
+<input type="checkbox" id="words" name="words" value="words"/>
+</li>
+
+<li>
+<label for="image">Image</label>
+<input type="checkbox" id="image" name="image" value="image"/>
+</li>
+
+<li>
+<label for="table">Table</label>
+<input type="checkbox" id="table" name="table" value="table"/>
+</li>
+
+<li>
+<label for="ollist">Ol list</label>
+<input type="checkbox" id="ollist" name="ollist" value="ollist"/>
+</li>
+
+<li>
+<label for="ullist">Ul list</label>
+<input type="checkbox" id="ullist" name="ullist" value="ullist"/>
+</li>
+</ol>
+</dd>
+</dl>
+
+<!-- html - enquire page -->
+<dl>
+<dt><ul><li class="underline"><strong>HTML Requirements Completed - Enquire Page</strong></li></ul></dt>
+<dd>
+<ol>
+<li>
+<label for="HTML5enq">Validated HTML5</label>
+<input type="checkbox" id="HTML5enq" name="HTML5enq" value="HTML5enq"/>
+</li>
+
+<li>
+<label for="XMLenq">Validated XML</label>
+<input type="checkbox" id="XMLenq" name="HTML5enq" value="HTML5enq"/>
+</li>
+
+<li>
+<label for="navmenuenq">Nav menu</label>
+<input type="checkbox" id="navmenuenq" name="navmenuenq" value="navmenuenq"/>
+</li>
+
+<li>
+<label for="form">Form (at least two form controls)</label>
+<input type="checkbox" id="form" name="form" value="form"/>
+</li>
+
+<li>
+<label for="echoed">Specified data echoed back from server</label>
+<input type="checkbox" id="echoed" name="echoed" value="echoed"/>
+</li>
+
+<li>
+<label for="HTML5checking">Some HTML5 data checking</label>
+<input type="checkbox" id="HTML5checking" name="HTML5checking" value="HTML5checking"/>
+</li>
+</ol>
+</dd>
+</dl>
+
+<!-- html - about page -->
+<dl>
+<dt><ul><li class="underline"><strong>HTML Requirements Completed - About Page</strong></li></ul></dt>
+<dd>
+<ol>
+<li>
+<label for="HTML5about">Validated HTML5</label>
+<input type="checkbox" id="HTML5about" name="HTML5about" value="HTML5about"/>
+</li>
+
+<li>
+<label for="XMLabout">Validated XML</label>
+<input type="checkbox" id="XMLabout" name="HTML5about" value="HTML5about"/>
+</li>
+
+<li>
+<label for="navmenuabout">Nav menu</label>
+<input type="checkbox" id="navmenuabout" name="navmenuabout" value="navmenuabout"/>
+</li>
+
+<li>
+<label for="section">3 Sections</label>
+<input type="checkbox" id="section" name="section" value="section"/>	
+</li>
+
+<li>
+<label for="dllist">Dt list</label>
+<input type="checkbox" id="dllist" name="dllist" value="dllist"/>
+</li>
+
+<li>
+<label for="timetable1">Timetable</label>
+<input type="checkbox" id="timetable1" name="timetable1" value="timetable1"/>
+</li>
+
+<li>
+<label for="photo">Photo</label>
+<input type="checkbox" id="photo" name="photo" value="photo"/>
+</li>
+
+<li>
+<label for="email">Email link</label>
+<input type="checkbox" id="email" name="email" value="email"/>
+</li>
+</ol>
+</dd>
+</dl>
+
+<!-- CSS -->
+<dl>
+<dt><ul><li class="underline"><strong>CSS Requirements Completed</strong></li></ul></dt>
+<dd>
+<ol>
+<li>
+<label for="excss">Validated external CSS</label>
+<input type="checkbox" id="excss" name="excss" value="excss"/>
+</li>
+
+<li>
+<label for="csshtml">Single file CSS applied to all HTML pages</label>
+<input type="checkbox" id="csshtml" name="csshtml" value="csshtml"/>
+</li>
+
+<li>
+<label for="styleapplied">Consistent typological style applied to all pages</label>
+<input type="checkbox" id="styleapplied" name="styleapplied" value="styleapplied"/>
+</li>
+
+<li>
+<label for="layout">Some CSS layout applied</label>
+<input type="checkbox" id="layout" name="layout" value="layout"/>
+</li>
+</ol>
+</dd>
+</dl>
+
+<!-- Mercury deployment -->
+<dl>
+<dt><ul><li class="underline"><strong>Mercury Deployment Completed</strong></li></ul></dt>
+<dd>
+<ol>
+<li>
+<label for="mercury">Deployed to Mercury</label>
+<input type="checkbox" id="mercury" name="mercury" value="mercury"/>
+</li>
+</ol>
+</dd>
+</dl>
+</section>
+
+<!-- Section - Reflection -->
+<section>
+<h2 class="h2about">Reflection:</h2>
+<aside>
+<p><em>Basically, i have learned to know how to make side by side images using "margin","text-align","display" and etc attributes and css file. Also know how to do background image, navigation bar, figure and many mores to complete my website. I did need some advices beside lecturer and teacher, from "https://www.w3schools.com".</em></p>
+</aside>
+</section>
+
+<!-- footer -->
+<footer>
+<p><a href="mailto:101992153@student.swin.edu.au">Email: Dong Xuan Nguyen (Harry)</a></p>
+</footer>
+  
+</body>
+</html>
