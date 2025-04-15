@@ -1,0 +1,94 @@
+/* 
+filename: Assignment 1A Individual
+author: Dong Xuan Nguyen
+created: 19/10/2018
+last modified: 10/11/2018
+description: unknown;
+*/
+
+/* ---------------------------- Responsive Layout ---------------------------------*/
+
+/* Responsive navigation menua and site */
+@media screen and (max-width: 600px) {
+.nav a, .nav-right {
+    float: none;
+    display: block;
+  }
+
+.nav-centered a {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: none;
+  }
+  body {
+	  font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 601px) {
+	body {
+		font-size: 80px;
+	}
+}
+
+/* Responsive layout */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+
+/* product image responsive */
+@media screen and (min-width: 31.25em) {
+	
+	#s9black {
+		width: 43%;
+	}
+	
+	#s9blue {
+		width: 43%;
+	}
+	
+	#s9pink {
+		width: 43%;
+	}
+	
+	#s9gold {
+		clear: both;
+		float: none;
+		width: 90%;
+		margin: 0 1em 1em 1.5em;
+	}
+	
+	#s9gold img {
+		float: left;
+		width: 30%;
+		margin: .5em 1em 1em 0;
+	}
+	
+	#note9black {
+		width: 43%;
+	}
+	
+	#note9copper {
+		width: 43%;
+	}
+	
+	#note9blue {
+		clear: both;
+		float: none;
+		width: 90%;
+		margin: 0 1em 1em 1.5em;
+	}
+	
+	#note9blue img {
+		float: left;
+		width: 30%;
+		margin: .5em 1em 1em 0;
+	}
+	
+	article {
+		min-width: 600px;
+	}
+}

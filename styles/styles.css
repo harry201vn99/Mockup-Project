@@ -1,0 +1,392 @@
+/* 
+filename: Assignment 1A Individual
+author: Dong Xuan Nguyen
+created: 19/10/2018
+last modified: 10/11/2018
+description: unknown;
+*/
+
+/* ---------------------------- All Pages ---------------------------------*/
+
+/* ---- background image ---- */
+
+/* apply background image to the website with fluid layout */
+body {
+    background-image: url('images/background.jpg'); /* set background image */
+    background-repeat: no-repeat; /* do not set multiple (repear) background images */
+    background-position: center; /* set background image in center location */
+    background-attachment: fixed; /* background image can not be changed */
+	background-size: cover;	 /* set background image to full page */
+}
+
+body, html {
+  height: 100%;
+}
+/* ---- footer and text ---- */
+
+/* set footer at the bottom of the site with fluid layout */
+footer {
+    background-color: transparent;
+    color: black;
+	text-align: center;
+	border-top: 2px solid grey;
+	clear: both;
+}
+
+/* change all font family and align in the site */
+* {
+	font-family: Andale Mono, monospace;
+	box-sizing: border-box;
+}
+
+/* ---------------------------- Index Page ---------------------------------*/
+
+/* ----- Nav bar ----- */
+
+/* overall of navigation bar */
+.nav {
+    position: relative; /* Set positioned relative to its normal position */
+    overflow: hidden; /* Set overflow clipped and the rest of content will be invisible */
+	border-bottom: 1px solid silver; /* set a border line below the navigation bar */
+}
+
+/* Style the links inside the navigation bar */
+.nav a {
+  float: left; 
+  color: Grey; /* set color */
+  text-align: center; /* set location */
+  padding: 14px 65px; /* set horizontal and vertical */
+  text-decoration: none; /* set underline */
+  font-size: 17px; /* set font size */
+  font-family: 'TW Cen MT', 'Arial', sans-serif; /* set font style */
+  font-weight: bold; /* set level of font wieght */
+}
+
+/* Change the color of links on hover */
+.nav a:hover {
+  color: DodgerBlue; /* set color */
+  border-bottom: 3px solid DodgerBlue; /* ser border line */
+}
+
+/* Add a color to the active/current link */
+.nav a.active {
+  background-color: DodgerBlue; /* set background color */
+  color: white; /* set color */
+}
+
+/* Centered section inside the top navigation */
+.nav-centered a {
+  float: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* Right-aligned section inside the top navigation */
+.nav-right {
+  float: right;
+}
+
+/* ---- image ---- */
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+	margin: auto;
+}
+
+.middle {  
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover img {  /* image blur when hovered */
+  opacity: 0.5;
+}
+
+.container:hover .middle { /* text blur when hovered */
+  opacity: 1;
+}
+
+.text {
+  background-color: DodgerBlue; /* text appearance when hover */
+  color: white;
+  font-size: 15px;
+  padding: 16px 32px;
+}
+
+.h3pages {
+	background-color: DodgerBlue;
+	color: white;
+	text-align: center;
+}
+
+.h3product {
+	color: goldenrod;
+	text-align: center;
+	padding: 0px 300px;
+}
+
+/* ---- heading and paragraph ---- */
+
+/* change font style and apply location */
+h1 {
+	text-decoration: underline;
+	padding: 25px 0;
+	text-align: center;
+	color: darkblue;
+}
+
+/* change font style and apply location */
+aside {
+	padding: 0px 300px;
+	text-align: center;
+}
+
+/* ---------------------------- Enquire Page ---------------------------------*/
+
+/* modify font and location */
+.form {
+    float:left;
+}
+
+legend {
+	color: steelblue;
+}
+
+#formlog {
+	color: goldenrod;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url('images/samsungads.jpg');
+  /* Control the height of the image */
+  min-height: 430px;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Full-width input fields */
+  .formlogin[type=text], .formlogin[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+.formlogin[type=text]:focus, .formlogin[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Add styles to the form container */
+.container1 {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: DodgerBlue;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+/* ---------------------------- About Page ---------------------------------*/
+
+/* make image rounded */
+#myphoto {
+	width:200px;
+	border-radius: 50%;
+	padding: 10px 0px;
+}
+
+/* table border and columns */
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+	text-align: center;
+	margin: 0 auto;
+}
+
+/* make table larger */
+th, td {
+    padding: 15px;
+}
+
+/* background color */
+th {
+	background-color: DeepSkyBlue ;
+}
+
+.web {
+	background-color: MediumPurple;
+}
+
+.model {
+	background-color: HotPink;
+}
+
+.soft {
+	background-color: LightSeaGreen;
+}
+
+.market {
+	background-color: tan;
+}
+
+.underline {
+	text-decoration: underline;
+	color: navy;
+}
+
+.h2about {
+	color: crimson;
+}
+
+/* ---------------------------- Product Page ---------------------------------*/
+
+.h2product {
+	color: goldenrod;
+	text-align: center;
+}
+
+article {
+	margin: 0 auto; /* images in center of the site */
+	display: table;
+}
+
+/* image side by side */
+#s9black, #s9blue, #s9pink, #s9gold {
+	float: left;
+	text-align: center;
+	margin: 1em 1em 1em 1em;
+	padding: 0px 16px;
+}
+
+/* image side by side */
+#note9black, #note9blue, #note9copper {
+	float: left;
+	text-align: center;
+	margin: 1em 1em 1em 1em;
+}
+
+/* text in table on the left */
+.desc {
+	text-align: left;
+}
+
+/* product table */
+.tablepro {
+	text-align: left;
+	background-color: white;
+}
+
+.h2productnote {
+	color: DodgerBlue;
+	text-align: center;
+}
+
+.desctitle {
+	color: MidnightBlue;
+}
+
+.sn9blue {
+	color: royalblue;
+}
+
+.purple {
+	color: Fuchsia;
+}
+
+.gold {
+	color: gold;
+}
+
+.copper {
+	color: Goldenrod;
+}
+
+.table2 {
+	background-color: Turquoise;
+}
+
+#s9seriesblue {
+	background-color: royalblue;
+	color: white;
+}
+
+#s9seriesblack {
+	background-color: black;
+	color: white;
+}
+
+#s9seriespink {
+	background-color: Fuchsia;
+	color: white;
+}
+
+#s9seriesgold {
+	background-color: gold;
+	color: white;
+}
+
+#note9seriesblack {
+	background-color: black;
+	color: white;
+}
+
+#note9seriescopper {
+	background-color: goldenrod;
+	color: white;
+}
+
+#note9seriesblue {
+	background-color: royalblue;
+	color: white;
+}
+
+/* ---------------------------- Enhancements Page ---------------------------------*/
+.enhancetopic {
+	color: crimson;
+	font-size: 1.2em;
+}
+
+/*----------------------------- Product Purchase -----------------------------------*/
